@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Visa Jack</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        blueClr: '#003580',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <header class="bg-blueClr text-white">
+        <div class="lg:w-[85%] md:w-[90%] w-[95%] mx-auto">
+            <div class="flex items-center justify-between py-1">
+                <a href="#" class="text-xs"><i class="fa-solid fa-hands-praying me-1"></i>Jai Jinendra</a>
+                <div class="flex items-center gap-2">
+                    <button class="flex items-center gap-1">₹ INR <img src="./assets/india.png" class="w-4"
+                            alt=""></button>
+                    <div class="flex items-center justify-center">
+                        <div class="relative group">
+                            <button
+                                class="relative inline-block p-px font-medium leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
+                                <span
+                                    class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
+
+                                <span class="relative z-10 block px-4 py-[6px] rounded-xl bg-gray-950">
+                                    <div class="relative z-10 flex items-center space-x-2">
+                                        <span
+                                            class="transition-all duration-500 group-hover:translate-x-1 text-xs">Track
+                                            your application</span>
+                                        <svg class="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
+                                            data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path clip-rule="evenodd"
+                                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                                fill-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="dropdown dropdown-end">
+                        <div tabindex="0" role="button" class="border rounded-lg p-2 text-xs"><i
+                                class="fa-solid fa-user me-1"></i> My Account <span class="font-medium">₹0</span></div>
+                        <ul tabindex="0"
+                            class="dropdown-content mt-1 menu bg-base-100 text-neutral rounded-box z-[1] w-52 p-2 shadow">
+                            <li><a>For individuals</a></li>
+                            <li><a>For members</a></li>
+                            <li><a>For agents</a></li>
+                            <li><a>For partners</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bg- dark:bg-color4 shadow-sm">
+                <div class="customContainer navbar">
+                    <div class="navbar-start">
+                        <a href="/" class="w-[132px]">
+                            <img src="./assets/logo.png" class="w-full h-full rounded-md overflow-hidden object-contain"
+                                alt="logo" />
+                        </a>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="drawer drawer-end block md:block lg:hidden w-auto z-[1000]">
+                            <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+                            <div class="drawer-content">
+                                <label htmlFor="my-drawer-4" class="text-3xl text-color1">
+                                    <img src="./assets/bars.svg" class="h-[40px] w-[40px]" alt="" />
+                                </label>
+                            </div>
+                            <div class="drawer-side">
+                                <label htmlFor="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+                                <ul
+                                    class="menu p-4 w-80 min-h-full bg-gray-200 dark:bg-color4 text-neutral-800 dark:text-gray-50 text-lg drawerActiveLink">
+                                    <li>
+                                        <a href="/">Home</a>
+                                    </li>
+                                    <li>
+                                        <details>
+                                            <summary>Services</summary>
+                                            <div>
+                                                <ul class="ps-2">
+                                                    <li><a href="/branding">Branding</a></li>
+                                                    <li><a href="/web-design">Web design</a></li>
+                                                    <li><a href="/web-portal">Web portal</a></li>
+                                                    <li><a href="/">E-commerce</a></li>
+                                                    <li><a href="/">Web maintenance</a></li>
+                                                    <li><a href="/">Mobile App development</a></li>
+                                                    <li><a href="/">Search Engine Optimization</a></li>
+                                                    <li><a href="/">Social Media Marketing</a></li>
+                                                    <li><a href="/">ORM</a></li>
+                                                    <li><a href="/">Animated video</a></li>
+                                                </ul>
+                                            </div>
+                                        </details>
+                                    </li>
+                                    <li>
+                                        <a to="/portofolio">Portofolio</a>
+                                    </li>
+                                    <li>
+                                        <a href="/pricing">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="/combo">Combo packages</a>
+                                    </li>
+                                    <li>
+                                        <a href="/about-us">Reviews</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contact">Contact us</a>
+                                    </li>
+                                    <div
+                                        class="w-[85%] flex justify-between items-center gap-2 absolute bottom-4 left-6">
+                                        <p>Theme: </p>
+                                        <DarkModeBtn />
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="hidden md:hidden lg:block">
+                            <ul
+                                class="flex items-center gap-[2rem] text-neutral-800 dark:text-gray-50 font-medium whitespace-nowrap text-[14px] navLinks">
+                                <li>
+                                    <a href="#" class='hover:text-color1 duration-200'>Apply Visa</a>
+                                </li>
+                                <li>
+                                    <a href="#" class='duration-200 hover:text-color1'>Premium Visa
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class='duration-200 hover:text-color1'>Apply Passport</a>
+                                </li>
+                                <li>
+                                    <a href="#" class='duration-200 hover:text-color1'>Book Insurance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class='duration-200 hover:text-color1'>For Groups
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class='duration-200 hover:text-color1'>Counselling
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class='duration-200 hover:text-color1'>Get Visa Score</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white border-b-[2px] border-blueClr lg:block md:hidden hidden">
+            <div class="lg:w-[85%] md:w-[90%] w-[95%] mx-auto py-1">
+                <ul
+                    class="flex items-center justify-between gap-[2rem] text-gray-700 whitespace-nowrap text-[14px] navLinks">
+                    <li>
+                        <a href="#" class='duration-200'>Get Stay</a>
+                    </li>
+                    <li>
+                        <a href="#" class='duration-200'>Get Transfer</a>
+                    </li>
+                    <li>
+                        <a href="#" class='duration-200'>Tourism Services</a>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <div tabIndex={0} role="button" class="m-1  duration-200">
+                                Government Services<i class="fa-solid fa-caret-down ms-1"></i></div>
+                            <ul tabIndex={0}
+                                class="dropdown-content menu shadow-[4px_4px_4px_rgba(0,0,0,0.25)] dark:shadow-[2px_2px_4px_rgba(255,255,255,0.25)] bg-gray-100 dark:bg-color4 z-[999] p-0 w-52">
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Branding</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        design</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        portal</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">E-commerce</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        maintenance</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Mobile
+                                        App development</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Search
+                                        Engine Optimization</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Social
+                                        Media Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">ORM</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Animated
+                                        video</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <div tabIndex={0} role="button" class="m-1  duration-200">
+                                Public Services<i class="fa-solid fa-caret-down ms-1"></i></div>
+                            <ul tabIndex={0}
+                                class="dropdown-content menu shadow-[4px_4px_4px_rgba(0,0,0,0.25)] dark:shadow-[2px_2px_4px_rgba(255,255,255,0.25)] bg-gray-100 dark:bg-color4 z-[999] p-0 w-52">
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Branding</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        design</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        portal</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">E-commerce</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        maintenance</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Mobile
+                                        App development</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Search
+                                        Engine Optimization</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Social
+                                        Media Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">ORM</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Animated
+                                        video</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <div tabIndex={0} role="button" class="m-1  duration-200">
+                                Migration Services<i class="fa-solid fa-caret-down ms-1"></i></div>
+                            <ul tabIndex={0}
+                                class="dropdown-content menu shadow-[4px_4px_4px_rgba(0,0,0,0.25)] dark:shadow-[2px_2px_4px_rgba(255,255,255,0.25)] bg-gray-100 dark:bg-color4 z-[999] p-0 w-52">
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Branding</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        design</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        portal</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">E-commerce</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        maintenance</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Mobile
+                                        App development</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Search
+                                        Engine Optimization</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Social
+                                        Media Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">ORM</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Animated
+                                        video</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <div tabIndex={0} role="button" class="m-1  duration-200">
+                                Citizen & Residence<i class="fa-solid fa-caret-down ms-1"></i></div>
+                            <ul tabIndex={0}
+                                class="dropdown-content menu shadow-[4px_4px_4px_rgba(0,0,0,0.25)] dark:shadow-[2px_2px_4px_rgba(255,255,255,0.25)] bg-gray-100 dark:bg-color4 z-[999] p-0 w-52">
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Branding</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        design</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        portal</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">E-commerce</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Web
+                                        maintenance</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Mobile
+                                        App development</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Search
+                                        Engine Optimization</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Social
+                                        Media Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">ORM</a>
+                                </li>
+                                <li>
+                                    <a href="/"
+                                        class="hover:!bg-blueClr hover:!text-white !rounded-none !px-4 !py-2">Animated
+                                        video</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class='duration-200'>For Membership</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="bg-black text-gray-100">
+        <div
+            class="lg:w-[85%] md:w-[90%] w-[95%] mx-auto flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+            <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                <h1 class="text-5xl leading-none sm:text-6xl">
+                    <span>Peace of Mind.</span>
+                    <span>Ease of Money.</span>
+                </h1>
+                <p class="my-6 text-lg font-light">Avail
+                    <span class="text-blue-400 font-medium">Foreign Currency</span>,
+                    <span class="text-blue-400 font-medium">Forex Cards,</span>
+                    <span class="text-blue-400 font-medium">Travel Assistance</span>
+                    &
+                    <span class="text-blue-400 font-medium">Travel Loan</span>
+                    for a hassle-free trip.
+                </p>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/axio.jpg" class="w-14" alt="">
+                    <img src="./assets/Makemytrip_logo.png" class="w-14" alt="">
+                    <img src="./assets/bookmyforx_logo.png" class="w-14" alt="">
+                    <img src="./assets/sbm-logo.png" class="w-14" alt="">
+                </div>
+                <div class="mt-5">
+                    <p class="text-4xl font-semibold">3,000,000+</p>
+                    <p class="text-lg">Happy travellers</p>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                <img src="./assets/map.svg" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                <div class="mt-10">
+                    <p class="text-center font-medium">Live Customer Interactions</p>
+                    <div class="text-sm mt-5 grid gap-4 lg:grid-cols-4 grid-cols-2">
+                        <p class="flex items-center text-gray-400 gap-1"><img src="./assets/card.png" class="w-4"
+                                alt="">Forex Card Swipe</p>
+                        <p class="flex items-center text-gray-400 gap-1"><img src="./assets/dollar.png" class="w-4"
+                                alt="">Forex Order</p>
+                        <p class="flex items-center text-gray-400 gap-1"><img src="./assets/success.png" class="w-4"
+                                alt="">Trips Assisted</p>
+                        <p class="flex items-center text-gray-400 gap-1"><img src="./assets/loans.png" class="w-4"
+                                alt="">Travel Loans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-10">
+        <div class="lg:w-[85%] md:w-[90%] w-[95%] mx-auto">
+            <ul
+                class="flex pb-3 items-center justify-between gap-[2rem] text-gray-700 font-semibold whitespace-nowrap text-[16px] overflow-x-auto border-b navLinks">
+                <li>
+                    <a href="/" class='duration-200 text-blue-700'>Information Corner</a>
+                </li>
+                <li>
+                    <a href="/portofolio" class='duration-200 '>What's New
+                    </a>
+                </li>
+                <li>
+                    <a href="/pricing" class='duration-200 '>Open Talk</a>
+                </li>
+                <li>
+                    <a href="/combo" class='duration-200 '>News zone
+                    </a>
+                </li>
+                <li>
+                    <a href="/about-us" class='duration-200 '>Blog zone
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact" class='duration-200 '>Offer zone
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact" class='duration-200 '>On Arrival Visa
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact" class='duration-200 '>Visa in a Day
+                    </a>
+                </li>
+            </ul>
+            <div class="p-2 mx-auto mt-5 sm:p-4 text-gray-100">
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-xs">
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col class="w-24">
+                        </colgroup>
+                        <thead class="bg-gray-400">
+                            <tr class="text-left">
+                                <th class="p-3">Name</th>
+                                <th class="p-3" colspan="5">Useful Links</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-opacity-20 border-gray-700 text-neutral-900">
+                                <td class="p-3 border-r">
+                                    <p>97412378923</p>
+                                </td>
+                                <td class="p-3">
+                                    <p>Microsoft Corporation</p>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-opacity-20 border-gray-700 text-neutral-800">
+                                <td class="p-3 border-r">
+                                    <p>97412378923</p>
+                                </td>
+                                <td class="p-3">
+                                    <p>Microsoft Corporation</p>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-opacity-20 border-gray-700 text-neutral-800">
+                                <td class="p-3 border-r">
+                                    <p>97412378923</p>
+                                </td>
+                                <td class="p-3">
+                                    <p>Microsoft Corporation</p>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-opacity-20 border-gray-700 text-neutral-800">
+                                <td class="p-3 border-r">
+                                    <p>97412378923</p>
+                                </td>
+                                <td class="p-3">
+                                    <p>Microsoft Corporation</p>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-opacity-20 border-gray-700 text-neutral-800">
+                                <td class="p-3 border-r">
+                                    <p>97412378923</p>
+                                </td>
+                                <td class="p-3">
+                                    <p>Microsoft Corporation</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-6 bg-blueClr text-gray-100">
+        <div class="lg:w-[85%] md:w-[90%] w-[95%] mx-auto grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-3 md:grid-cols-4">
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-medium">For you</h2>
+                <div class="flex flex-col space-y-2 text-sm text-gray-300">
+                    <a rel="noopener noreferrer" href="#">Add Pick Up / Drop</a>
+                    <a rel="noopener noreferrer" href="#">Make Payment</a>
+                    <a rel="noopener noreferrer" href="#">Upload Documents</a>
+                    <a rel="noopener noreferrer" href="#">Best Price & Service Guaranteed</a>
+                    <a rel="noopener noreferrer" href="#">My – Time Promise</a>
+                    <a rel="noopener noreferrer" href="#">Offer Zone</a>
+                    <a rel="noopener noreferrer" href="#">News Zone</a>
+                    <a rel="noopener noreferrer" href="#">Blog Zone</a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-medium">For Company</h2>
+                <div class="flex flex-col space-y-2 text-sm text-gray-300">
+                    <a rel="noopener noreferrer" href="#">About Us</a>
+                    <a rel="noopener noreferrer" href="#">Our Values</a>
+                    <a rel="noopener noreferrer" href="#">Disclaimers</a>
+                    <a rel="noopener noreferrer" href="#">Private Policy</a>
+                    <a rel="noopener noreferrer" href="#">Payment Security</a>
+                    <a rel="noopener noreferrer" href="#">Documents Security</a>
+                    <a rel="noopener noreferrer" href="#">Terms & Conditions</a>
+                    <a rel="noopener noreferrer" href="#">Inside C/o</a>
+                    <a rel="noopener noreferrer" href="#">Life @ C/o</a>
+                    <a rel="noopener noreferrer" href="#">Job / Career</a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-medium">Others</h2>
+                <div class="flex flex-col space-y-2 text-sm text-gray-300">
+                    <a rel="noopener noreferrer" href="#">Help us to Improve</a>
+                    <a rel="noopener noreferrer" href="#">Grievance Redressed</a>
+                    <a rel="noopener noreferrer" href="#">Any Feedback</a>
+                    <a rel="noopener noreferrer" href="#">Sitemap</a>
+                    <a rel="noopener noreferrer" href="#">Troubleshoot</a>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4">
+                <h2 class="font-medium">Call Back Request</h2>
+                <div class="flex flex-col space-y-2 text-sm text-gray-300">
+                    <p>PRIORITY</p>
+                    <div>
+                        <input type="radio" name="priority" id="low" value="low">
+                        <label for="low">Low</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="priority" id="medium" value="medium">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="priority" id="high" value="high">
+                        <label for="high">High</label>
+                    </div>
+                </div>
+                <form action="">
+                    <input type="text" name="name" id="name" class="w-full mb-1 p-1 rounded-md" placeholder="Name">
+                    <input type="Number" name="number" id="number" class="w-full mb-1 p-1 rounded-md"
+                        placeholder="Number">
+                    <input type="email" name="email" id="email" class="w-full mb-1 p-1 rounded-md"
+                        placeholder="Email ID">
+                    <textarea name="" id="" rows="3" id="" class="w-full p-1 rounded-md"
+                        placeholder="Message"></textarea>
+                    <button class="w-full p-1 bg-white font-semibold text-blueClr rounded-md">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="flex items-center justify-center px-6 pt-12 text-sm">
+            <span class="text-gray-300">© Copyright 1986. All Rights Reserved.</span>
+        </div>
+    </footer>
+</body>
+
+</html>
